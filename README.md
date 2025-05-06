@@ -18,3 +18,6 @@
 | Footer: Centered Text                          |
 +------------------------------------------------+
 
+## Features
+
+- Responsive design using Bootstrap
