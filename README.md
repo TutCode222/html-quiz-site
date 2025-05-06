@@ -21,3 +21,7 @@
 ## Features
 
 - Responsive design using Bootstrap
+- Custom styles including a "kelly green" theme
+- Quiz questions using HTML <button> elements
+- Hero section with call-to-action button
+- Footer with centered copyright
