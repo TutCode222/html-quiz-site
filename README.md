@@ -32,3 +32,10 @@
 - CSS: Custom styles using class and id selectors, including color, padding, etc.
 - Bootstrap: Components such as navbar, card, row, col, and responsive utilities
 - JavaScript: Event-driven programming to handle answer selection and feedback
+
+## Next Steps
+
+- Add interactivity with JavaScript to show correct/incorrect answers
+- Expand question set for more comprehensive coverage (Maybe)
+- Enhance visual feedback (e.g., highlight correct answers)
+- Store results or scores
