@@ -36,39 +36,38 @@
     </section>
 
     <div class="container my-5">
-        <div class="row" id="quiz-container">
-            <div class="col-md-6">
-                <div class="card p-3 mb-3">
-                    <h2 class="card-title">Question 1</h2>
-                    <p class="card-text">Which tag is used for a paragraph in HTML?</p>
-                    <form>
-                        <ul class="list-unstyled">
-                            <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;div&gt;</button></li>
-                            <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;span&gt;</button></li>
-                            <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;p&gt;</button></li>
-                            <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h1&gt;</button></li>
-                        </ul>
-                    </form>
-        </div>
-    </div>
-
-
-    <div class="col-md-6">
-        <div class="card p-3 mb-3">
-          <h2 class="card-title">Question 2</h2>
-          <p class="card-text">Which tag creates a hyperlink?</p>
-          <form>
-            <ul class="list-unstyled">
-              <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;img&gt;</button></li>
-              <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;a&gt;</button></li>
-              <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;br&gt;</button></li>
-              <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;ul&gt;</button></li>
-            </ul>
-          </form>
-        </div>
-
-
-        <div class="col">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="quiz-container">
+          <div class="col">
+            <div class="card p-3">
+              <h2 class="card-title">Question 1</h2>
+              <p class="card-text">Which tag is used for a paragraph in HTML?</p>
+              <form>
+                <ul class="list-unstyled">
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;div&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;span&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;p&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h1&gt;</button></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card p-3">
+              <h2 class="card-title">Question 2</h2>
+              <p class="card-text">Which tag creates a hyperlink?</p>
+              <form>
+                <ul class="list-unstyled">
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;img&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;a&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;br&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;ul&gt;</button></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+    
+          <div class="col">
             <div class="card p-3">
               <h2 class="card-title">Question 3</h2>
               <p class="card-text">Which tag is used to display an image?</p>
@@ -83,7 +82,6 @@
             </div>
           </div>
     
-
           <div class="col">
             <div class="card p-3">
               <h2 class="card-title">Question 4</h2>
@@ -98,7 +96,7 @@
               </form>
             </div>
           </div>
-
+    
           <div class="col">
             <div class="card p-3">
               <h2 class="card-title">Question 5</h2>
@@ -113,6 +111,23 @@
               </form>
             </div>
           </div>
+    
+          <div class="col">
+            <div class="card p-3">
+              <h2 class="card-title">Question 6</h2>
+              <p class="card-text">Which tag is used for the largest heading?</p>
+              <form>
+                <ul class="list-unstyled">
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h6&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h1&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h3&gt;</button></li>
+                  <li><button type="button" class="btn btn-outline-kelly-green answer-btn">&lt;h4&gt;</button></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="script.js"></script>
 </body>
