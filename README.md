@@ -25,3 +25,10 @@
 - Quiz questions using HTML <button> elements
 - Hero section with call-to-action button
 - Footer with centered copyright
+
+## Technologies Used
+
+- HTML: Semantic tags such as <p>, <h1>, <h2>, <a>, <img>, <button>, <ol>, <ul>, <form>, <table>
+- CSS: Custom styles using class and id selectors, including color, padding, etc.
+- Bootstrap: Components such as navbar, card, row, col, and responsive utilities
+- JavaScript: Event-driven programming to handle answer selection and feedback
