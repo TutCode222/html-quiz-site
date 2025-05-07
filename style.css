@@ -37,3 +37,9 @@ body {
   .card .card-title {
     font-weight: bold;
   }
+
+  .answer-btn {
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+  }
