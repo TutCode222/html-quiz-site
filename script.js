@@ -61,6 +61,9 @@ allButtons.forEach((btn) => {
 }
 
 // Show NEXT button after answer
+const nextBtn = parentCard.querySelector(".next-btn");
+      if (nextBtn) nextBtn.style.display = "inline-block";
+      
 });
 });
 
