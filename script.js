@@ -88,3 +88,11 @@ const nextButtons = document.querySelectorAll(".next-btn");
 });
 });
 });
+
+document.getElementById("restart-btn").addEventListener("click", function () {
+    score = 0;
+    currentIndex = 0;
+  
+    // Reset answer buttons and styling
+
+    // Hide results and restart button
