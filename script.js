@@ -94,5 +94,18 @@ document.getElementById("restart-btn").addEventListener("click", function () {
     currentIndex = 0;
   
     // Reset answer buttons and styling
+    const allCards = document.querySelectorAll(".quiz-card");
+  allCards.forEach((card, index) => {
+    const buttons = card.querySelectorAll(".answer-btn");
+    buttons.forEach((btn) => {
+      btn.disabled = false;
+      btn.classList.remove("btn-success", "btn-danger");
+    });
+
+    const next = card.querySelector(".next-btn");
+    if (next) next.style.display = "none";
+
+    card.style.display = index === 0 ? "block" : "none";
+  });
 
     // Hide results and restart button
