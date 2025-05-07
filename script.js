@@ -63,9 +63,19 @@ allButtons.forEach((btn) => {
 // Show NEXT button after answer
 const nextBtn = parentCard.querySelector(".next-btn");
       if (nextBtn) nextBtn.style.display = "inline-block";
-      
+
 });
 });
 
 //Handle NEXT button click
+const nextButtons = document.querySelectorAll(".next-btn");
+
+  nextButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      quizCards[index].style.display = "none";
+      if (quizCards[index + 1]) {
+        quizCards[index + 1].style.display = "block";
+      }
+});
+});
 });
