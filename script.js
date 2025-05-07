@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Show only the first question at first
+quizCards.forEach((card, index) => {
+    card.style.display = index === 0 ? "block" : "none";
+  });
 
+  
 // Select all answer buttons on the page
 const answerButtons = document.querySelectorAll(".answer-btn");
 
