@@ -11,7 +11,10 @@ body {
   }
 
 /* Navbar Styling */
-
+.navbar {
+    background-color: var(--kelly-green);
+  }
+  
 /* Hero section */
 
 /* Card Styling */
