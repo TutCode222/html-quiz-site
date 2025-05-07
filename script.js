@@ -1,7 +1,7 @@
 // Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", function () {
 
-    
+
 // Select all answer buttons on the page
 const answerButtons = document.querySelectorAll(".answer-btn");
 
@@ -33,6 +33,12 @@ const correctAnswers = {
 const questionTitle = parentCard.querySelector(".card-title").innerText;
       const correctAnswer = correctAnswers[questionTitle];
 
+      
 // Check if clicked answer is correct
+if (button.innerText === correctAnswer) {
+        button.classList.add("btn-success");
+      } else {
+        button.classList.add("btn-danger");
+
 
 // Highlight the correct button
