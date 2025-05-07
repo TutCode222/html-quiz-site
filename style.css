@@ -34,5 +34,6 @@ body {
     margin: 15px;
   }
 
-  
-
+  .card .card-title {
+    font-weight: bold;
+  }
