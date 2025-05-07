@@ -109,3 +109,7 @@ document.getElementById("restart-btn").addEventListener("click", function () {
   });
 
     // Hide results and restart button
+    document.getElementById("results").style.display = "none";
+  document.getElementById("results").innerHTML = "";
+  this.style.display = "none";
+});
