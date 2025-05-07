@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 // Select all answer buttons on the page
+const answerButtons = document.querySelectorAll(".answer-btn");
 
 // Prevent multiple clicks by disabling all buttons in the question
 
