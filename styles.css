@@ -12,8 +12,8 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: var(--kelly-green);
-  }
+  background-color: #4CBB17;
+}
   .navbar .navbar-brand,
   .navbar .nav-link {
     color: white !important;
@@ -29,6 +29,7 @@ body {
     margin-bottom: 30px;
   }
 
+  /* Button */
   .btn-kelly-green {
     background-color: #4CBB17 !important;  /* Kelly Green */
     border-color: #4CBB17 !important;
