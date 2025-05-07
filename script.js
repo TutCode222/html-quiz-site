@@ -11,8 +11,19 @@ answerButtons.forEach((button) => {
         const allButtons = parentCard.querySelectorAll(".answer-btn"); // All buttons in this card
 
 // Prevent multiple clicks by disabling all buttons in the question
+allButtons.forEach((btn) => {
+    btn.disabled = true;
+  });
 
-// Define correct answers (use textContent or innerText as needed)
+// Define correct answers 
+const correctAnswers = {
+    "Question 1": "<p>",
+    "Question 2": "<a>",
+    "Question 3": "<img>",
+    "Question 4": "<table>",
+    "Question 5": "<form>",
+    "Question 6": "<h1>"
+  };
 
 // Get the question title (e.g., "Question 1")
 
