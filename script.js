@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Select all answer buttons on the page
 const answerButtons = document.querySelectorAll(".answer-btn");
+let score = 0; // 🆕 Track correct answers
 
 answerButtons.forEach((button) => {
     // Add a click event to each button
@@ -31,9 +32,9 @@ const correctAnswers = {
 
 // Get the question title (e.g., "Question 1")
 const questionTitle = parentCard.querySelector(".card-title").innerText;
-      const correctAnswer = correctAnswers[questionTitle];
+const correctAnswer = correctAnswers[questionTitle];
 
-      
+
 // Check if clicked answer is correct
 if (button.innerText === correctAnswer) {
         button.classList.add("btn-success");
@@ -42,3 +43,12 @@ if (button.innerText === correctAnswer) {
 
 
 // Highlight the correct button
+allButtons.forEach((btn) => {
+    if (btn.innerText === correctAnswer) {
+      btn.classList.add("btn-success");
+    }
+  });
+}
+});
+});
+});
