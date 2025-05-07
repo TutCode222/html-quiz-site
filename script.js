@@ -10,7 +10,7 @@ quizCards.forEach((card, index) => {
     card.style.display = index === 0 ? "block" : "none";
   });
 
-  
+
 // Select all answer buttons on the page
 const answerButtons = document.querySelectorAll(".answer-btn");
 
@@ -47,6 +47,7 @@ const correctAnswer = correctAnswers[questionTitle];
 // Check if clicked answer is correct
 if (button.innerText === correctAnswer) {
         button.classList.add("btn-success");
+        score++;
       } else {
         button.classList.add("btn-danger");
 
@@ -58,6 +59,10 @@ allButtons.forEach((btn) => {
     }
   });
 }
+
+// Show NEXT button after answer
 });
 });
+
+//Handle NEXT button click
 });
