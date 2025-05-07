@@ -61,6 +61,14 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Hover state */
+.answer-btn:hover,
+.answer-btn:focus {
+  background-color: #4CBB17 !important;
+  color: white !important;
+  border-color: #4CBB17 !important;
+  box-shadow: 0 0 5px rgba(76, 187, 23, 0.5);  /* subtle glow */
+}
 
 /* Card Styling */
 .card {
