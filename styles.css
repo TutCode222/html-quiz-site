@@ -30,6 +30,11 @@ body {
   }
 
   /* Button */
+
+  button.btn-kelly-green {
+    background-color: #4CBB17 !important;
+  }
+
   .btn-kelly-green {
     background-color: #4CBB17 !important;  /* Kelly Green */
     border-color: #4CBB17 !important;
