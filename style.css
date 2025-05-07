@@ -1,6 +1,15 @@
 /* Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
 
 /* Theme color */
+:root {
+    --kelly-green: #4CBB17;
+  }
+  
 
 /* Navbar Styling */
 
