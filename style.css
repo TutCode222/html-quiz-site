@@ -14,7 +14,12 @@ body {
 .navbar {
     background-color: var(--kelly-green);
   }
-  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: white !important;
+    font-weight: bold;
+  }
+
 /* Hero section */
 
 /* Card Styling */
