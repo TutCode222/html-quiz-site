@@ -1,10 +1,15 @@
 // Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", function () {
+    const quizCards = document.querySelectorAll(".quiz-card"); // 🆕 Wraps each question card
+    let score = 0; // Track correct answers
+    let currentIndex = 0;
 
+
+// Show only the first question at first
 
 // Select all answer buttons on the page
 const answerButtons = document.querySelectorAll(".answer-btn");
-let score = 0; // 🆕 Track correct answers
+
 
 answerButtons.forEach((button) => {
     // Add a click event to each button
