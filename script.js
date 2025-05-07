@@ -73,8 +73,17 @@ const nextButtons = document.querySelectorAll(".next-btn");
   nextButtons.forEach((btn, index) => {
     btn.addEventListener("click", () => {
       quizCards[index].style.display = "none";
+
       if (quizCards[index + 1]) {
         quizCards[index + 1].style.display = "block";
+      } else {
+        // Show results at end
+        document.getElementById("results").innerHTML = `
+          <h3>Quiz Complete!</h3>
+          <p>Your score is ${score} out of ${quizCards.length}</p>
+        `;
+        document.getElementById("results").style.display = "block";
+        document.getElementById("restart-btn").style.display = "inline-block";
       }
 });
 });
