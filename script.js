@@ -99,7 +99,7 @@ document.getElementById("restart-btn").addEventListener("click", function () {
     const buttons = card.querySelectorAll(".answer-btn");
     buttons.forEach((btn) => {
       btn.disabled = false;
-      btn.classList.remove("btn-kelly-green", "btn-red");
+      btn.classList.remove("btn-kelly-green", "btn-primary");
     });
 
     const next = card.querySelector(".next-btn");
