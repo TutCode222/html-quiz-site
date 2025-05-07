@@ -46,16 +46,16 @@ const correctAnswer = correctAnswers[questionTitle];
 
 // Check if clicked answer is correct
 if (button.innerText === correctAnswer) {
-        button.classList.add("btn-success");
+        button.classList.add("btn-kelly-green");
         score++;
       } else {
-        button.classList.add("btn-danger");
+        button.classList.add("btn-red");
 
 
 // Highlight the correct button
 allButtons.forEach((btn) => {
     if (btn.innerText === correctAnswer) {
-      btn.classList.add("btn-success");
+      btn.classList.add("btn-kelly-green");
     }
   });
 }
@@ -99,7 +99,7 @@ document.getElementById("restart-btn").addEventListener("click", function () {
     const buttons = card.querySelectorAll(".answer-btn");
     buttons.forEach((btn) => {
       btn.disabled = false;
-      btn.classList.remove("btn-success", "btn-danger");
+      btn.classList.remove("btn-kelly-green", "btn-red");
     });
 
     const next = card.querySelector(".next-btn");
