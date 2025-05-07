@@ -70,6 +70,12 @@ body {
   box-shadow: 0 0 5px rgba(76, 187, 23, 0.5);  /* subtle glow */
 }
 
+.btn-wrong {
+  background-color: #dc3545 !important;  /* Red */
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+
 /* Card Styling */
 .card {
     margin: 15px;
