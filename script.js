@@ -6,8 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
 
     // Prompt for name
-  userName = prompt("Please enter your name:");
-  if (!userName) userName = "Anonymous";
+    const nameSection = document.getElementById("name-input-section");
+    const startBtn = document.getElementById("start-quiz-btn");
+    const quizContainer = document.getElementById("quiz-container");
+    
+    quizContainer.style.display = "none"; // hide quiz initially
+    
+    startBtn.addEventListener("click", () => {
+      const input = document.getElementById("user-name").value.trim();
+      userName = input || "Anonymous";
+    
+      nameSection.style.display = "none";
+      quizContainer.style.display = "block";
+      showQuestion(0); // Start with the first question
+    });
   
     // Show only the first question at first
     quizCards.forEach((card, index) => {
