@@ -22,11 +22,11 @@ body {
 
 /* Hero section */
 .hero-section {
+  width: 100%; /* Full width */
+  background-color: #4CBB17; /* Kelly Green */
+  color: white;
   text-align: center;
-  padding: 40px 20px;
-  background-color: white;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  padding: 60px 20px;
 }
 
 /* Default Answer Buttons */
