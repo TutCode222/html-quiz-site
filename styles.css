@@ -95,37 +95,27 @@ table td {
   vertical-align: middle;
 }
 
-/* Results Table Styling */
-#results-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  background-color: #ffffff;
-  border: 2px solid var(--kelly-green); /* Table border */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(76, 187, 23, 0.1); /* Subtle green glow */
+/* Strong override for Bootstrap's default table borders */
+table#results-table,
+table#results-table th,
+table#results-table td {
+  border: 2px solid var(--kelly-green) !important;
 }
 
-#results-table th,
-#results-table td {
-  padding: 12px 16px;
-  border: 2px solid #4CBB17;
-  text-align: left;
+/* Style header */
+table#results-table th {
+  background-color: var(--kelly-green) !important;
+  color: white !important;
 }
 
-#results-table th {
-  background-color: var(--kelly-green);
-  color: white;
-  font-weight: bold;
+/* Even row styling */
+table#results-table tr:nth-child(even) {
+  background-color: #f8f9fa !important;
 }
 
-#results-table tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-
-#results-table tr:hover {
-  background-color: #e6f5df;
+/* Hover styling */
+table#results-table tr:hover {
+  background-color: #e6f5df !important;
 }
 
 /* Footer */
