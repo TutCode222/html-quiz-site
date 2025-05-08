@@ -2,7 +2,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const quizCards = document.querySelectorAll(".quiz-card");
     let score = 0;
+    let userName = "";
     let currentIndex = 0;
+
+    // Prompt for name
+  userName = prompt("Please enter your name:");
+  if (!userName) userName = "Anonymous";
   
     // Show only the first question at first
     quizCards.forEach((card, index) => {
