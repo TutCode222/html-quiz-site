@@ -90,6 +90,16 @@ body {
   font-weight: bold;
 }
 
+.table-success {
+  background-color: #4CBB17;
+  color: white;
+}
+
+table th,
+table td {
+  vertical-align: middle;
+}
+
 /* Footer */
 footer {
   text-align: center;
