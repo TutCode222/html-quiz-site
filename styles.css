@@ -107,9 +107,10 @@ table td {
   border-collapse: collapse;
   margin-top: 30px;
   background-color: #ffffff;
+  border: 2px solid var(--kelly-green); /* Table border */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(76, 187, 23, 0.1); /* Subtle green glow */
 }
 
 #results-table th,
@@ -120,30 +121,7 @@ table td {
 }
 
 #results-table th {
-  background-color: #4CBB17;
-  color: white;
-  font-weight: bold;
-}/* Results Table Styling */
-#results-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 30px;
-  background-color: #ffffff;
-  border: 2px solid #4CBB17; /* Kelly Green border around table */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(76, 187, 23, 0.15); /* optional green glow */
-}
-
-#results-table th,
-#results-table td {
-  padding: 12px 16px;
-  border: 1px solid #4CBB17; /* Kelly Green cell borders */
-  text-align: left;
-}
-
-#results-table th {
-  background-color: #4CBB17;
+  background-color: var(--kelly-green);
   color: white;
   font-weight: bold;
 }
