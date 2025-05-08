@@ -103,4 +103,20 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("results").innerHTML = "";
       this.style.display = "none";
     });
-  });
+    // Function to add a result row to the table
+  function addResultToTable(result) {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${result.name}</td>
+      <td>${result.score}</td>
+      <td>${result.percent}</td>
+      <td>${result.date}</td>
+    `;
+    const tableBody = document.getElementById("results-table-body");
+    if (tableBody) tableBody.appendChild(row);
+  }
+
+  // Load previous results on page load
+  const saved = JSON.parse(localStorage.getItem("quizResults")) || [];
+  saved.forEach(addResultToTable);
+});
