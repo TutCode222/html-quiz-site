@@ -70,12 +70,29 @@ document.addEventListener("DOMContentLoaded", function () {
         if (quizCards[index + 1]) {
           quizCards[index + 1].style.display = "block";
         } else {
+            const percent = Math.round((score / quizCards.length) * 100);
+            const today = new Date().toLocaleDateString();
+
           document.getElementById("results").innerHTML = `
             <h3>Quiz Complete!</h3>
-            <p>Your score is ${score} out of ${quizCards.length}</p>
+            <p>Your score is ${score} out of ${quizCards.length} (${percent}%)</p>
           `;
           document.getElementById("results").style.display = "block";
           document.getElementById("restart-btn").style.display = "inline-block";
+
+          // Store result
+        const resultEntry = {
+            name: userName,
+            score: `${score}/${quizCards.length}`,
+            percent: `${percent}%`,
+            date: today
+          };
+  
+          let storedResults = JSON.parse(localStorage.getItem("quizResults")) || [];
+          storedResults.push(resultEntry);
+          localStorage.setItem("quizResults", JSON.stringify(storedResults));
+  
+          addResultToTable(resultEntry);
         }
       });
     });
