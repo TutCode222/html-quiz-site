@@ -82,10 +82,19 @@ body {
   color: white !important;
 }
 
+.btn-wrong:disabled {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+
 /* Prevent accidental style override on disabled buttons */
 .answer-btn:disabled {
   opacity: 1;
   pointer-events: none;
+  background-color: inherit !important;
+  color: inherit !important;
+  border-color: inherit !important;
 }
 
 /* Card Styling */
