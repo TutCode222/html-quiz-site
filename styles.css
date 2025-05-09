@@ -140,3 +140,17 @@ footer {
   color: #555;
   font-size: 0.9rem;
 }
+
+/* Ensure wrong answers stay red even when disabled */
+.answer-btn.btn-wrong:disabled {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: white !important;
+}
+
+/* Ensure correct answers stay green even when disabled */
+.answer-btn.btn-kelly-green:disabled {
+  background-color: #4CBB17 !important;
+  border-color: #4CBB17 !important;
+  color: white !important;
+} 
